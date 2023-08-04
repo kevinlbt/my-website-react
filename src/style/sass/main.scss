@@ -1,0 +1,10 @@
+@import "var.scss";
+@import "navbar.scss";
+@import "header.scss";
+
+.high {
+
+    background-color: $back-color;
+    background-repeat: repeat;
+    background-size: contains;
+}

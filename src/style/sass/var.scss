@@ -1,0 +1,234 @@
+$back-color: #1b2133;
+$nav-color: #222a3f;
+$btn-color: #cc5216;
+$title-font: 'Iceberg', cursive;
+$text-font: 'Lato', sans-serif;
+$text-color: white;
+$white-back: #d9e2f7;
+
+
+@mixin btn ($fs){
+    background-color: $btn-color;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 0.5vw;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: $fs;
+    font-family: $title-font;
+    border: none;
+    cursor: pointer;
+    --c: #cc5216; /* the color */
+    --b: .15vw;    /* border length*/
+    --d: 0.6vw;    /* the cube depth */
+    
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid #0000;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+        conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+        conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    -webkit-transform: translate(calc(var(--d)/-1),var(--d));
+    -ms-transform: translate(calc(var(--d)/-1),var(--d));
+            transform: translate(calc(var(--d)/-1),var(--d));
+    -webkit-clip-path: 
+        polygon(
+        var(--d) 0%, 
+        var(--d) 0%, 
+        100% 0%, 
+        100% calc(100% - var(--d)),
+        100% calc(100% - var(--d)),
+        var(--d) calc(100% - var(--d))
+        );
+            clip-path: 
+        polygon(
+        var(--d) 0%, 
+        var(--d) 0%, 
+        100% 0%, 
+        100% calc(100% - var(--d)),
+        100% calc(100% - var(--d)),
+        var(--d) calc(100% - var(--d))
+        );
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+@mixin transform ($x) {
+    -webkit-transform: scale($x);
+            -ms-transform: scale($x);
+                transform: scale($x);
+}
+
+@mixin icone ($x,$y,$s) {
+    position: absolute;
+    top: $x;
+    left: $y;
+    font-size: $s;
+    z-index: 7;
+    border: none;
+    border-radius: 2px;
+    color: $white-back;
+}
+
+@mixin keyframes($name,$deg) {
+    @keyframes #{$name}{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate($deg);
+        }
+    }
+}
+
+@mixin whiteCircle ($size,$x,$y,$deg,$name) {
+    .circle {
+        border-radius: 50%;
+        position: absolute;
+        top: $x;
+        left: $y;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+      }
+      
+      .big {
+        background-color: #1f304b;;
+        width: $size;
+        height: $size;
+        z-index: 1;
+
+        .circlebis {
+            .layer-1 {
+                -webkit-transform: rotate($deg);
+                    -ms-transform: rotate($deg);
+                        transform: rotate($deg);
+                -webkit-animation: $name ease-in-out 3s;
+                        animation: $name ease-in-out 3s;
+            }
+            .item {
+                width: calc($size + 0.11vw);
+                height: calc($size + 0.11vw);
+                position: absolute;
+                border-radius: 50%;
+                clip: rect(0, calc($size + 0.5vw), calc($size + 0.5vw), calc(($size / 2) + 0.2vw));
+
+                .fill {
+                    width: calc($size + 0.13vw);
+                    height: calc($size + 0.13vw);
+                    position: absolute;
+                    border-radius: 50%;
+                    clip: rect(0, calc(($size / 2) + 0.25vw), calc($size + 0.5vw), 0);
+                    background-color: white;
+                    -webkit-transform: rotate($deg);
+                        -ms-transform: rotate($deg);
+                            transform: rotate($deg);
+                    -webkit-animation: $name ease-in-out 3s;
+                            animation: $name ease-in-out 3s;
+                }
+                @include keyframes($name,$deg)
+            }
+        }
+      }
+      
+      .white {
+        background-color: white;
+        width: calc($size / 1.45);
+        height: calc($size / 1.45);
+        z-index: 2;
+        -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+                box-shadow: 0px 0px 20px 1px #000000 inset;
+      }
+      
+      .small {
+        background-color: $back-color;
+        width: calc($size / 3.2);
+        height: calc($size / 3.2);
+      }
+}
+
+@mixin language ($fs,$x,$y){
+
+    p {
+        font-size: $fs;
+        font-family: $title-font;
+        color: $text-color;
+        position: absolute;
+        top: $x;
+        left: $y;
+        padding-top: 1vw;
+    }
+}
+
+@mixin orangePoint ($content,$top,$left,$mtop) {
+
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: $btn-color;
+        margin-top: $mtop;
+      
+        &:before {
+            content:$content;
+            position: absolute;
+            top: $top;
+            left: $left;
+            color: $text-color;
+            font-family: $title-font;
+            font-size: 1.5vw;
+        }
+    
+}
+
+@mixin projetpat {
+
+    h3 {
+        font-family: $title-font;
+        font-size: 3vw;
+        color: $text-color;
+        padding: 1vw 3vw;
+    }
+    p {
+        font-family: $text-font;
+        font-size: 1.2vw;
+        color: $text-color;
+        padding: 1vw 3vw;
+    }
+    span {
+        background-color: $text-color;
+        width: 20%;
+        height: 1px;
+        margin: 1vw 6vw;
+    }
+    div {
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        img {
+            width: 70%;
+            height: auto;
+            margin: 1vw 3vw;
+            border-radius: 6px;
+        }
+        a {
+            color: $text-color;
+            font-size: 2.5vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+    }
+}
