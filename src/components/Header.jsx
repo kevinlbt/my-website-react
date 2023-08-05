@@ -18,6 +18,7 @@ export default function Header () {
                     <i className="fa-brands fa-php php"></i>
                     <i className="fa-brands fa-github git"></i>
                     <i className="fa-solid fa-code code"></i>
+                    <i className="fa-brands fa-react react"></i>
                 </div>
             </section>
 }

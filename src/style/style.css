@@ -463,6 +463,681 @@
     color: #d9e2f7;
   }
 }
+.head .bloc2 .react {
+  position: absolute;
+  top: 2vw;
+  left: 14vw;
+  font-size: 2.5vw;
+  z-index: 7;
+  border: none;
+  border-radius: 2px;
+  color: #d9e2f7;
+}
+@media (max-width: 500px) {
+  .head .bloc2 .react {
+    position: absolute;
+    top: 0vw;
+    left: 12vw;
+    font-size: 7vw;
+    z-index: 7;
+    border: none;
+    border-radius: 2px;
+    color: #d9e2f7;
+  }
+}
+
+.skills .skillsdef {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0vw 3vw;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.skills .skillsdef .textskills {
+  width: 30%;
+  color: white;
+  margin-right: 2vw;
+}
+.skills .skillsdef .textskills h1 {
+  font-family: "Iceberg", cursive;
+  font-size: 3vw;
+  margin: 2vw 0;
+  margin-left: 2vw;
+}
+.skills .skillsdef .textskills p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1vw;
+  margin-left: 2vw;
+  margin-bottom: 1.5vw;
+}
+.skills .skillsdef .textskills button {
+  width: 70%;
+  margin: 1vw 2vw;
+  padding: 1vw;
+  text-align: center;
+  border: none;
+  border-radius: 40px;
+  -webkit-box-shadow: -5px 5px 6px 0 rgba(10, 15, 31, 0.973), 5px -5px 6px 0 rgba(25, 57, 126, 0.425);
+  box-shadow: -5px 5px 6px 0 rgba(10, 15, 31, 0.973), 5px -5px 6px 0 rgba(25, 57, 126, 0.425);
+  font-size: 1.3vw;
+  font-family: "Lato", sans-serif;
+  background-color: #1b2133;
+  color: white;
+  cursor: pointer;
+}
+.skills .skillsdef .textskills .active_button {
+  -webkit-box-shadow: inset -3px 3px 5px 0 rgba(10, 15, 31, 0.973), inset 4px -4px 3px 0 rgba(25, 57, 126, 0.425);
+  box-shadow: inset -3px 3px 5px 0 rgba(10, 15, 31, 0.973), inset 4px -4px 3px 0 rgba(25, 57, 126, 0.425);
+  font-size: 1.25vw;
+  padding: 1.05vw 1.05vw;
+}
+.skills .skillsdef .skillsimg img {
+  width: 40vw;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  -o-transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+.skills .skillsdef .skillsimg img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.skills .circleskills {
+  display: none;
+  height: 20vw;
+  position: relative;
+  margin-right: 1.5vw;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.skills .circleskills .circle1 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle1 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle1 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  transform: rotate(160deg);
+  -webkit-animation: fillan ease-in-out 3s;
+  animation: fillan ease-in-out 3s;
+}
+.skills .circleskills .circle1 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle1 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  transform: rotate(160deg);
+  -webkit-animation: fillan ease-in-out 3s;
+  animation: fillan ease-in-out 3s;
+}
+@keyframes fillan {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(160deg);
+  }
+}
+.skills .circleskills .circle1 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle1 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle1 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 7.75vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle2 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle2 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle2 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+  -webkit-animation: fillen ease-in-out 3s;
+  animation: fillen ease-in-out 3s;
+}
+.skills .circleskills .circle2 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle2 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+  -webkit-animation: fillen ease-in-out 3s;
+  animation: fillen ease-in-out 3s;
+}
+@keyframes fillen {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(140deg);
+  }
+}
+.skills .circleskills .circle2 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle2 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle2 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 26.25vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle3 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle3 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle3 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: fillou ease-in-out 3s;
+  animation: fillou ease-in-out 3s;
+}
+.skills .circleskills .circle3 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle3 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation: fillou ease-in-out 3s;
+  animation: fillou ease-in-out 3s;
+}
+@keyframes fillou {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+.skills .circleskills .circle3 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle3 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle3 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 45vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle4 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle4 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle4 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+  -webkit-animation: fillon ease-in-out 3s;
+  animation: fillon ease-in-out 3s;
+}
+.skills .circleskills .circle4 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle4 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+  -webkit-animation: fillon ease-in-out 3s;
+  animation: fillon ease-in-out 3s;
+}
+@keyframes fillon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(110deg);
+  }
+}
+.skills .circleskills .circle4 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle4 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle4 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 66vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle5 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle5 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle5 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+  -webkit-animation: fillin ease-in-out 3s;
+  animation: fillin ease-in-out 3s;
+}
+.skills .circleskills .circle5 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle5 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
+  -webkit-animation: fillin ease-in-out 3s;
+  animation: fillin ease-in-out 3s;
+}
+@keyframes fillin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+.skills .circleskills .circle5 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle5 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle5 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 83.75vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle6 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle6 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle6 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+  -webkit-animation: filli ease-in-out 3s;
+  animation: filli ease-in-out 3s;
+}
+.skills .circleskills .circle6 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle6 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+  -webkit-animation: filli ease-in-out 3s;
+  animation: filli ease-in-out 3s;
+}
+@keyframes filli {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(110deg);
+  }
+}
+.skills .circleskills .circle6 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle6 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle6 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 27.5vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle7 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle7 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle7 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(130deg);
+  -webkit-animation: fillop ease-in-out 3s;
+  animation: fillop ease-in-out 3s;
+}
+.skills .circleskills .circle7 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle7 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(130deg);
+  -webkit-animation: fillop ease-in-out 3s;
+  animation: fillop ease-in-out 3s;
+}
+@keyframes fillop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(130deg);
+  }
+}
+.skills .circleskills .circle7 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle7 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle7 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 47.5vw;
+  padding-top: 1vw;
+}
+.skills .circleskills .circle8 .circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.skills .circleskills .circle8 .big {
+  background-color: #1f304b;
+  width: 8vw;
+  height: 8vw;
+  z-index: 1;
+}
+.skills .circleskills .circle8 .big .circlebis .layer-1 {
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(130deg);
+  -webkit-animation: fillun ease-in-out 3s;
+  animation: fillun ease-in-out 3s;
+}
+.skills .circleskills .circle8 .big .circlebis .item {
+  width: 8.11vw;
+  height: 8.11vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 8.5vw, 8.5vw, 4.2vw);
+}
+.skills .circleskills .circle8 .big .circlebis .item .fill {
+  width: 8.13vw;
+  height: 8.13vw;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0, 4.25vw, 8.5vw, 0);
+  background-color: white;
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(130deg);
+  -webkit-animation: fillun ease-in-out 3s;
+  animation: fillun ease-in-out 3s;
+}
+@keyframes fillun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(130deg);
+  }
+}
+.skills .circleskills .circle8 .white {
+  background-color: white;
+  width: 5.5172413793vw;
+  height: 5.5172413793vw;
+  z-index: 2;
+  -webkit-box-shadow: 0px 0px 20px 1px #000000 inset;
+  box-shadow: 0px 0px 20px 1px #000000 inset;
+}
+.skills .circleskills .circle8 .small {
+  background-color: #1b2133;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.skills .circleskills .circle8 p {
+  font-size: 2vw;
+  font-family: "Iceberg", cursive;
+  color: white;
+  position: absolute;
+  top: 13vw;
+  left: 65.75vw;
+  padding-top: 1vw;
+}
+.skills .circles_display {
+  display: block;
+}
 
 .high {
   background-color: #1b2133;

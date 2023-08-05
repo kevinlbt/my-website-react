@@ -192,5 +192,13 @@
                     @include icone(7vw,1vw,7vw);
                 }
             }
+
+            .react {
+                @include icone(2vw,14vw,2.5vw);
+
+                @media (max-width: 500px) {
+                    @include icone(0vw,12vw,7vw);
+                }
+            }
         }
 }

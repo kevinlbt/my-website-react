@@ -1,0 +1,129 @@
+
+.skills {
+
+
+    .skillsdef {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0vw 3vw;
+        -webkit-box-pack:space-evenly;
+            -ms-flex-pack:space-evenly;
+                justify-content:space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        .textskills {
+            width: 30%;
+            color: $text-color;
+            margin-right: 2vw;
+            
+            h1 {
+                font-family: $title-font;
+                font-size: 3vw;
+                margin: 2vw 0;
+                margin-left: 2vw;
+            }
+
+            p {
+                font-family: $text-font;
+                font-size: 1.1vw;
+                margin-left: 2vw;
+                margin-bottom: 1.5vw;
+            }
+            button {
+                width: 70%;
+                margin: 1vw 2vw;
+                padding: 1vw;
+                text-align: center;
+                border: none;
+                border-radius: 40px;
+                -webkit-box-shadow: 
+                    -5px 5px 6px 0 rgba(10, 15, 31, 0.973),
+                    5px -5px 6px 0 rgba(25, 57, 126, 0.425);
+                        box-shadow: 
+                    -5px 5px 6px 0 rgba(10, 15, 31, 0.973),
+                    5px -5px 6px 0 rgba(25, 57, 126, 0.425);
+                font-size: 1.3vw;
+                font-family: $text-font;
+                background-color: $back-color;
+                color: $text-color;
+                cursor: pointer;
+                
+            }
+
+            .active_button {
+                -webkit-box-shadow: inset -3px 3px 5px 0 rgba(10, 15, 31, 0.973),
+                            inset 4px -4px 3px 0 rgba(25, 57, 126, 0.425);
+                        box-shadow: inset -3px 3px 5px 0 rgba(10, 15, 31, 0.973),
+                            inset 4px -4px 3px 0 rgba(25, 57, 126, 0.425);
+                font-size: 1.25vw;
+                padding: 1.05vw 1.05vw;
+            }
+        }
+        .skillsimg {
+            
+            img {
+                width: 40vw;
+                height: auto;
+                -webkit-transition: -webkit-transform 0.4s ease-out;
+                transition: -webkit-transform 0.4s ease-out;
+                -o-transition: transform 0.4s ease-out;
+                transition: transform 0.4s ease-out;
+                transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;;
+            }
+            img:hover {
+                @include transform(1.1);
+            }
+        }
+    }
+
+    .circleskills {
+        display: none;
+        height: 20vw;
+        position: relative;
+        margin-right: 1.5vw;
+        -webkit-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+        transition: opacity 0.5s;
+
+        .circle1 {
+            @include whiteCircle (8vw,50%,10%,160deg,fillan);
+            @include language(2vw,13vw,7.75vw);
+        }
+        .circle2 {
+            @include whiteCircle (8vw,50%,30%,140deg,fillen);
+            @include language(2vw,13vw,26.25vw);
+        }
+        .circle3 {
+            @include whiteCircle (8vw,50%,50%,90deg,fillou);
+            @include language(2vw,13vw,45vw);
+        }
+        .circle4 {
+            @include whiteCircle (8vw,50%,70%,110deg,fillon);
+            @include language(2vw,13vw,66vw);
+        }
+        .circle5 {
+            @include whiteCircle (8vw,50%,90%,120deg,fillin);
+            @include language(2vw,13vw,83.75vw);
+        }
+        .circle6 {
+            @include whiteCircle (8vw,50%,30%,110deg,filli);
+            @include language(2vw,13vw,27.5vw);
+        }
+        .circle7 {
+            @include whiteCircle (8vw,50%,50%,130deg,fillop);
+            @include language(2vw,13vw,47.5vw);
+        }
+        .circle8 {
+            @include whiteCircle (8vw,50%,70%,130deg,fillun);
+            @include language(2vw,13vw,65.75vw);
+        }
+    }
+
+    .circles_display {
+
+        display: block;
+    }
+}
