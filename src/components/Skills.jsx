@@ -44,7 +44,8 @@ export default function Skills () {
                     </div>
                     <div className="textskills">
                         <h1>Compétences</h1>
-                        <p>J'utilise du HTML, du SCSS, du javascript et du php principalement, que j'ai appris à maitriser au cours de ma formation et des projets réalisés. Mais je peux utiliser d'autres technologies suivant le projet.</p>
+                        <p>J'utilise du HTML, du SCSS, du javascript et React principalement, que j'ai appris à maitriser au cours de ma formation et des projets réalisés. 
+                            Mais je peux utiliser d'autres technologies suivant le projet.</p>
                         <button onClick={() => HandleActiveButton("front")} className={`${activeButton === "front" ? "active_button" : null}`}>front-end</button>
                         <button onClick={() => HandleActiveButton("back")} className={`${activeButton === "back" ? "active_button" : null}`}>back-end</button>
                     </div>

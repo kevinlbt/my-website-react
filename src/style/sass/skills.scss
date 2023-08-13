@@ -18,12 +18,33 @@
             width: 30%;
             color: $text-color;
             margin-right: 2vw;
+
+            @media (max-width: 500px) {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 80%;
+                margin-right: 0;
+            }
             
             h1 {
                 font-family: $title-font;
                 font-size: 3vw;
                 margin: 2vw 0;
                 margin-left: 2vw;
+
+                @media (max-width: 500px) {
+                    font-size: 10vw;
+                    margin: 3vw auto;
+                    text-align: center;
+                }
             }
 
             p {
@@ -31,6 +52,12 @@
                 font-size: 1.1vw;
                 margin-left: 2vw;
                 margin-bottom: 1.5vw;
+
+                @media (max-width: 500px) {
+                    font-size: 6vw;
+                    margin: 3vw auto;
+                    text-align: center;
+                }
             }
             button {
                 width: 70%;
@@ -50,6 +77,13 @@
                 background-color: $back-color;
                 color: $text-color;
                 cursor: pointer;
+
+                @media (max-width: 500px) {
+                    width: 80%;
+                    margin: 5vw auto;
+                    font-size: 8vw;
+                    padding: 3vw 2vw;
+                }
                 
             }
 
@@ -60,10 +94,21 @@
                             inset 4px -4px 3px 0 rgba(25, 57, 126, 0.425);
                 font-size: 1.25vw;
                 padding: 1.05vw 1.05vw;
+
+                @media (max-width: 500px) {
+                    width: 80%;
+                    margin: 5vw auto;
+                    font-size: 8vw;
+                    padding: 3vw 2vw;
+                }
             }
         }
         .skillsimg {
             
+            @media (max-width: 500px) {
+                display: none;
+            }
+
             img {
                 width: 40vw;
                 height: auto;
@@ -88,37 +133,81 @@
         -o-transition: opacity 0.5s;
         transition: opacity 0.5s;
 
+        @media (max-width: 500px) {
+            height: 55vw;
+        }
+
         .circle1 {
             @include whiteCircle (8vw,50%,10%,160deg,fillan);
             @include language(2vw,13vw,7.75vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,30%,20%,160deg,fillan);
+                @include language(5vw,26vw,15vw);
+            }
         }
         .circle2 {
             @include whiteCircle (8vw,50%,30%,140deg,fillen);
             @include language(2vw,13vw,26.25vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,30%,50%,140deg,fillen);
+                @include language(5vw,26vw,41vw);
+            }
         }
         .circle3 {
             @include whiteCircle (8vw,50%,50%,90deg,fillou);
             @include language(2vw,13vw,45vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,30%,80%,90deg,fillou);
+                @include language(5vw,26vw,69vw);
+            }
         }
         .circle4 {
             @include whiteCircle (8vw,50%,70%,110deg,fillon);
             @include language(2vw,13vw,66vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,80%,35%,40deg,fillon);
+                @include language(5vw,55vw,27vw);
+            }
         }
         .circle5 {
             @include whiteCircle (8vw,50%,90%,120deg,fillin);
             @include language(2vw,13vw,83.75vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,80%,65%,120deg,fillin);
+                @include language(5vw,55vw,53vw);
+            }
         }
         .circle6 {
             @include whiteCircle (8vw,50%,30%,110deg,filli);
             @include language(2vw,13vw,27.5vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,30%,30%,110deg,filli);
+                @include language(5vw,26vw,25vw);
+            }
         }
         .circle7 {
             @include whiteCircle (8vw,50%,50%,130deg,fillop);
             @include language(2vw,13vw,47.5vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,30%,70%,130deg,fillop);
+                @include language(5vw,26vw,65vw);
+            }
         }
         .circle8 {
             @include whiteCircle (8vw,50%,70%,130deg,fillun);
             @include language(2vw,13vw,65.75vw);
+
+            @media (max-width: 500px) {
+                @include whiteCircle (20vw,80%,50%,60deg,fillun);
+                @include language(5vw,55vw,43vw);
+            }
         }
     }
 

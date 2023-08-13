@@ -1,0 +1,117 @@
+.portfolio {
+
+    position: relative;
+    padding-top: 5vw;
+    
+
+    h2 {
+        font-family: $title-font;
+        font-size: 4vw;
+        padding: 2vw;
+        margin-left: 12vw;
+        color: $text-color;
+    }
+
+    .vertical-line {
+        position: absolute;
+        top: 11vw;
+        bottom: 3vw;
+        left: 50%;
+        width: 1px;
+        background-color: white;
+        z-index: 9999;
+    
+        ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 5vw;
+        left: -5px;
+        
+        }
+
+    }
+
+    .blocsite {
+
+            display: -ms-grid;
+            display: grid;
+            overflow: hidden;
+
+        .projet1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            justify-self: flex-end;
+            width: 40%;
+            margin-right: 4vw;
+            transform: translateX(70em);
+            opacity: 0;
+            transition: all 1s ease-in-out;
+
+            .orange {
+                
+                @include orangePoint(0.3em);
+                
+            }
+            .date_projet {
+
+                font-size: 1.5vw;
+                font-family: $title-font
+            }
+
+            @include projetpat;
+            
+        }
+
+        .active_projet_move {
+
+            transform: translateX(0em);
+            opacity: 1;
+        }
+
+        .projet2 {
+            
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            justify-self: flex-start;
+            text-align: end;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            width: 40%;
+            margin-left: 4vw;
+            transform: translateX(-70em);
+            transition: all 1s ease-in-out;
+            
+            .orange {
+                
+                @include orangePoint(0.4em);
+                
+            }
+            .date_projet {
+
+                font-size: 1.5vw;
+                font-family: $title-font
+            }
+
+            @include projetpat;
+            
+        }
+
+        .active_projet_move {
+
+            transform: translateX(0em);
+        }
+    } 
+}
