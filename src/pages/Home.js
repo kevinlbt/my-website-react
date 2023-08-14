@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import Portfolio from "../components/Portfolio";
 import About from "../components/About"
 import Contact from "../components/contact";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <Portfolio />
         <About />
         <Contact />
+        <Footer />
     </main>
       
     

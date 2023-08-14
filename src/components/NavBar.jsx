@@ -9,6 +9,7 @@ export default function NavBar () {
 
         setDisplayMobileMenu(v => !v)
     }
+    
     return <React.Fragment>
                 <nav className="header_desktop">       
                     <img src={logo} alt="logo of my website"/>

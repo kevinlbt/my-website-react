@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact () {
+
+    const [isFormDisplay, setIsFormDisplay] = useState(false)
 
     return <section className="contact">
 
                 <h3>Contacter - moi</h3>  
 
-                <div className="blocContact">
+                <div className={`blocContact ${isFormDisplay ? null : "active_form"}`}>
                     <h4>Une question ? un projet ?</h4>
                     <p>Contact - moi pour pouvoir discuter de votre projet et voir ce qu'il est possible de faire.</p>
-                    <button className="btn">Clique ici</button>
+                    <button onClick={() => setIsFormDisplay(true)} className="btn">Clique ici</button>
                 </div>
-
-                <div className="formbloc">
+                 
+                <div className={`formbloc ${isFormDisplay ? "active_form" : null}`}>
                     <div className="coor">
                         <div>
                             <i className="fa-regular fa-envelope"></i>
@@ -27,9 +29,8 @@ export default function Contact () {
                         </ul>
                     </div>
 
-
                     <form method="POST">
-                        <i className="fa-solid fa-circle-xmark"></i>
+                        <i onClick={() => setIsFormDisplay(false)} className="fa-solid fa-circle-xmark"></i>
                         <label for="name">Nom</label>
                         <div>
                             <input type="text" name="name" placeholder=" nom" className="inputS"/>
@@ -43,7 +44,7 @@ export default function Contact () {
                         <textarea name="message" cols="70" className="textArea"></textarea>
                         <button type="submit" className="btn">Envoyer</button>
                     </form>
-                </div>
+                </div>  
 
             </section>
 }
