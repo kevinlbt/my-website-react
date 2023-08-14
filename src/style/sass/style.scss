@@ -1272,9 +1272,7 @@ $white-back: #d9e2f7;
         .header_mobile {
 
             display: -webkit-box;
-
             display: -ms-flexbox;
-
             display: flex;
             -webkit-box-align: center;
                 -ms-flex-align: center;
@@ -1341,11 +1339,8 @@ $white-back: #d9e2f7;
         .head {
 
             -webkit-box-orient: vertical;
-
             -webkit-box-direction: reverse;
-
                 -ms-flex-direction: column-reverse;
-
                     flex-direction: column-reverse;
 
             .bloc2 {
