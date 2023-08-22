@@ -8,7 +8,9 @@ import Contact from "../components/contact";
 import Footer from "../components/Footer";
 
 function Home() {
+
   return (
+    
     <main className="high">
         <NavBar />
         <Header />
@@ -19,7 +21,6 @@ function Home() {
         <Footer />
     </main>
       
-    
   );
 }
 

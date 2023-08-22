@@ -1,7 +1,7 @@
 .contact {
 
     margin-bottom: 5vw;
-
+    overflow: hidden;
 
     h3 {
         font-family: $title-font;
@@ -17,50 +17,11 @@
             margin: 10vw 4vw;
         }
     }
-   
-    .backto {
-        display: none;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        padding: 1vw 0;
-        margin: 4vw;
-        text-decoration: none;
-
-        @media (max-width: 500px) {
-
-            margin: 7vw 3vw;
-        }
-
-        i {
-            font-size: 3vw;
-            color: $text-color;
-            margin-right: 1vw;
-
-            @media (max-width: 500px) {
-
-                font-size: 7vw;
-            }
-        }
-        p {
-            font-family: $title-font;
-            font-size: 2vw;
-            color: $text-color;
-
-            @media (max-width: 500px) {
-
-                font-size: 6vw;
-            }
-        }
-    }
         
     
     .blocContact {
         width: 60%;
-        display: none;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -79,10 +40,6 @@
         background-image: url("../assets/images/testb.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        opacity: 0;
-        -webkit-transition: opacity 1s;
-        -o-transition: opacity 1s;
-        transition: opacity 1s;
         -webkit-box-shadow: 
             -12px 12px 16px 0 rgba(10, 15, 31, 0.973),
             8px -8px 12px 0 rgba(32, 73, 160, 0.425);
@@ -159,7 +116,7 @@
 
     .formbloc {
 
-        display: none;
+        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -176,10 +133,6 @@
         background-color: $nav-color;
         border-radius: 40px;
         position: relative;
-        opacity: 0;
-        -webkit-transition: opacity 0.5s;
-        -o-transition: opacity 0.5s;
-        transition: opacity 0.5s;
         background-image: url("../assets/images/form-back.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -263,6 +216,11 @@
                 font-family: $text-font;
                 font-size: 1.1vw;
                 color: $text-color;
+
+                @media (max-width: 500px) {
+
+                    font-size: 4vw;
+                }
             }
 
             ul {
@@ -286,7 +244,7 @@
 
                         @media (max-width: 500px) {
 
-                            font-size: 4vw;
+                            font-size: 7vw;
                             margin-left: 2vw;
                         }
                         
@@ -295,37 +253,6 @@
                         color: $btn-color;
                     }
                 }
-            }
-        }
-
-        .errorContact, .success  {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-
-            p {
-                font-family: $text-font;
-                font-size: 1.1vw;
-                color: firebrick;
-
-                @media (max-width: 500px) {
-
-                    font-size: 4vw;
-                }
-            }
-            .green {
-                color: forestgreen;
-
             }
         }
                   
@@ -480,12 +407,34 @@
         }
     }
 
-    .active_form {
-
-        display: flex;
+    .fade-in {
         opacity: 1;
-    }
+        transition: opacity 500ms, transform 500ms;
+      }
+      
+      .fade-out {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 500ms;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+      }
 
-    
+      .fade-out-bloc {
+        opacity: 0;
+        pointer-events: none;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Classe de délai pour la transition de la deuxième div */
+      .delayed {
+        transition-delay: 500ms;
+      }
+      
 
 }

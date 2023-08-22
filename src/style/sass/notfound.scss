@@ -1,0 +1,56 @@
+.not-found-container {
+
+    background-image: url("../assets/images/404.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    color: #ffffff; /* Blanc */
+
+    @media (max-width: 1056px) {
+        background-image: url("../assets/images/404-tablet.jpg");
+    }
+
+    @media (max-width: 570px) {
+        background-image: url("../assets/images/404-mobile.jpg");
+    }
+
+    .not-found-content {
+      text-align: center;
+      transform: translateY(4.5em);
+
+      @media (max-width: 1056px) {
+        text-align: left;
+        }
+
+        @media (max-width: 570px) {
+            transform: translateY(0);
+        }
+  
+      h1 {
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+
+        @media (max-width: 1056px) {
+            font-size: 2.5rem;
+        }
+      }
+  
+      p {
+        font-size: 1.7rem;
+      }
+  
+      // Réglages pour les petits écrans (ajustez selon vos besoins)
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+  
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }

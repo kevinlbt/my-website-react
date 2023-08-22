@@ -82,7 +82,7 @@ export default function Portfolio () {
         threshold: 0.1,
     })
 
-    return <section ref={containerRef}  className="portfolio">
+    return <section ref={containerRef}  className="portfolio" id="portfolio">
                 <h2>Portfolio</h2>
                 <div className="vertical-line"></div>
 

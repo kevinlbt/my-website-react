@@ -4,11 +4,20 @@ import './index.css';
 import './style/style.css'
 import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Legale from './components/Legale';
+import NotFound from './components/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' Component={Home}/>
+        <Route exact path='/legale' Component={Legale}/>
+        <Route path='*' Component={NotFound} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
