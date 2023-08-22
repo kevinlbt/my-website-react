@@ -3,6 +3,11 @@
     position: relative;
     padding-top: 5vw;
     
+    @media (max-width: 500px) {
+
+        margin-top: 15vw;
+        height: auto;
+    }
 
     h2 {
         font-family: $title-font;
@@ -10,6 +15,11 @@
         padding: 2vw;
         margin-left: 12vw;
         color: $text-color;
+
+        @media (max-width: 500px) {
+
+            font-size: 10vw;
+        }
     }
 
     .vertical-line {
@@ -20,24 +30,34 @@
         width: 1px;
         background-color: white;
         z-index: 9999;
-    
-        ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 5vw;
-        left: -5px;
-        
+
+        @media (max-width: 500px) {
+
+            display: none;
         }
+    
+            ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 5vw;
+            left: -5px;
+            
+            }
 
     }
 
     .blocsite {
 
-            display: -ms-grid;
-            display: grid;
-            overflow: hidden;
+        display: -ms-grid;
+        display: grid;
+        overflow: hidden;
+
+        @media (max-width: 500px) {
+
+            justify-items: center;
+        }
 
         .projet1 {
             display: -webkit-box;
@@ -54,6 +74,18 @@
             opacity: 0;
             transition: all 1s ease-in-out;
 
+            @media (max-width: 500px) {
+
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                -ms-grid-column-align: center;
+                    justify-self: center;
+                width: 80%;
+                margin: 7vw 3vw;
+
+            }
+
             .orange {
                 
                 @include orangePoint(0.3em);
@@ -62,7 +94,12 @@
             .date_projet {
 
                 font-size: 1.5vw;
-                font-family: $title-font
+                font-family: $title-font;
+
+                @media (max-width: 500px) {
+
+                    font-size: 5vw;
+                }
             }
 
             @include projetpat;
@@ -95,6 +132,18 @@
             opacity: 0;
             transition: all 1s ease-in-out;
             
+            @media (max-width: 500px) {
+
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                -ms-grid-column-align: center;
+                    justify-self: center;
+                width: 80%;
+                margin: 7vw 3vw;
+
+            }
+
             .orange {
                 
                 @include orangePoint(0.4em);
@@ -103,7 +152,12 @@
             .date_projet {
 
                 font-size: 1.5vw;
-                font-family: $title-font
+                font-family: $title-font;
+
+                @media (max-width: 500px) {
+
+                    font-size: 5vw;
+                }
             }
 
             @include projetpat;

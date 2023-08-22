@@ -82,9 +82,9 @@ export default function Portfolio () {
         threshold: 0.1,
     })
 
-    return <section className="portfolio" id="portfolio">
+    return <section ref={containerRef}  className="portfolio">
                 <h2>Portfolio</h2>
-                <div ref={containerRef}className="vertical-line"></div>
+                <div className="vertical-line"></div>
 
                 {project.map((projet) => (
                     <div key={projet[0].id} className="blocsite">
